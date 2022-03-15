@@ -1,0 +1,123 @@
+@import url('http://fonts.cdnfonts.com/css/panton');
+
+/* Text colors */
+.tc-white {
+    color: white;
+}
+.tc-kgb {
+    color: rgb(179, 208, 231);
+}
+.tc-kgb2 {
+    color: rgb(199, 211, 223);
+}
+.tc-kgb3 {
+    color: rgb(135, 188, 231);
+}
+.tc-kgb4 {
+    color: rgb(67, 149, 216);
+}
+.tc-black {
+    color: black;
+}
+.tc-red {
+    color: #ff7070;
+}
+.tc-yellow {
+    color: rgb(253, 255, 152);
+}
+.tc-green {
+    color: #21b062;
+}
+
+/* Text fonts */
+.tf-dms {
+    font-family: 'DM Sans';
+}
+.tf-qs {
+    font-family: 'Quicksand';
+}
+.tf-ptn {
+    font-family: 'Panton';
+    font-weight: 400;
+}
+.tf-ub {
+    font-family: 'Ubuntu';
+}
+.tf-os {
+    font-family: 'Open Sans';
+}
+
+/* Text sizes */
+.ts-1 {
+    font-size: 200px;
+}
+.ts-2 {
+    font-size: 175px;
+}
+.ts-3 {
+    font-size: 125px;
+}
+.ts-4 {
+    font-size: 100px;
+}
+.ts-5 {
+    font-size: 80px;
+}
+.ts-6 {
+    font-size: 65px;
+}
+.ts-7 {
+    font-size: 50px;
+}
+.ts-8 {
+    font-size: 35px;
+}
+.ts-9 {
+    font-size: 30px;
+}
+.ts-10 {
+    font-size: 25px;
+}
+.ts-11 {
+    font-size: 20px;
+}
+.ts-12 {
+    font-size: 18px;
+}
+.ts-13 {
+    font-size: 15px;
+}
+
+/* Text deco */
+
+.td-unbold {
+    font-weight: 350;
+}
+.td-bold {
+    font-weight: 700;
+}
+.td-bold2 {
+    font-weight: 600;
+}
+.td-bold3 {
+    font-weight: 500;
+}
+.td-ul {
+    text-decoration: underline;
+}
+.td-st {
+    text-decoration: line-through;
+}
+.td-it {
+    font-style: italic;
+}
+.td-cnt {
+    text-align: center;
+}
+.td-invis {
+    color: rgba(0,0,0,0);
+    font-size: 1px;
+}
+.td-nqinvis {
+    color: rgba(0,0,0,0);
+}

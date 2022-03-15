@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Dashboard | Withered</title>
+        <meta name="description"
+            content="Reliable hosting for your product - Withered (withered.app) helps you host your project on a reliable auto-update platform.">
+        <link rel="icon" type="image/png" sizes="750x750" href="/assets/i/icon-nbg.png">
+    
+        <!-- Fonts -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&amp;display=swap">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+        <link href="http://fonts.cdnfonts.com/css/panton" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/ubuntu" rel="stylesheet">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="/assets/css/text.css">
+        <link rel="stylesheet" href="/assets/css/header.css">
+        <link rel="stylesheet" href="/assets/css/div.css">
+        <link rel="stylesheet" href="/assets/css/misc.css">
+    
+        <!-- Header & Footer -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+            </script>
+        
+        <!-- Auth -->
+        <script type="module" src="/assets/js/auth.js"></script>
+    
+        <!-- Discord -->
+        <meta content="Withered | All-around powerful hosting" property="og:title">
+        <meta content="Reliable hosting for your product" property="og:description">
+        <meta content="https://withered.app" property="og:url">
+        <meta content="https://withered.app/assets/i/icon.png" property="og:image">
+        <meta content="#3f6aaa" data-react-helmet="true" name="theme-color">
+    </head>
+
+<body class="tc-white" onload="setInitialPOP();">
+    <!-- Header -->
+    <div id="asos"></div>
+
+    <div id="wpcnt" style="display: grid; place-items: center; place-content: center;">
+        <div id="popDetails" class="ts-10 tf-qs td-bold3">
+            <p class="ts-7 td-bold mpn td-cnt">Account</p>
+            <p id="dtlUID" class="mpn mt20">Something went wrong...</p><br>
+            <p id="dtlEmail" class="mpn mb20">Reload the page or contact us</p>
+            <div id="dtlsHosting" class="mpn mb20" style="padding: 25px;">
+                <p class="ts-8 mpn mt20"><strong>Hosting Details</strong></p>
+                <p id="dtlHType" class="ts-9 mpn mt20"></p>
+                <p id="dtlHWeb" class="ts-9 mpn mt20 mb20"></p>
+                <p id="dtlHWPl" class="mpn"></p>
+                <p id="dtlHWEx" class="mpn"></p>
+                <p id="dtlHWPr" class="mpn mb20"></p>
+                <p id="dtlHDsc" class="ts-9 mpn mt20 mb20"></p>
+                <p id="dtlHDPl" class="mpn"></p>
+                <p id="dtlHDEx" class="mpn"></p>
+                <p id="dtlHDPr" class="mpn"></p>
+            </div>
+            <button class="btn btn-one ts-11 tf-dms td-bold" onclick="logOut()">Log out</button>
+            <p class="tc-kgb2 tf-dms td-unbold" style="font-size: 14px;"><a href="/contact">Contact us</a> to request account termination</p>
+        </div>
+        <div id="popLogin">
+            <input id="ali-em" class="wtextfield" type="email" placeholder="Email">
+            <br style="margin-bottom: 23px;"><input id="ali-pw" class="wtextfield" type="password" placeholder="Password">
+            <br><br><button class="btn btn-two ts-11 tf-dms td-bold" onclick="logIn()">Log in</button>
+            <p id="alt-er" class="tc-red"></p>
+            <br><p class="tc-kgb2 tf-dms td-unbold" style="font-size: 14px;">Don't have an account? <a href="?pop=signup">Sign up</a>.</p>
+        </div>
+        <div id="popSignUp">
+            <input id="asi-em" class="wtextfield" type="email" placeholder="Email">
+            <br style="margin-bottom: 23px;"><input id="asi-pw" class="wtextfield" type="password" placeholder="Password">
+            <br style="margin-bottom: 23px;"><input id="asi-cp" class="wtextfield" type="password" placeholder="Confirm password">
+            <br><br><button class="btn btn-two ts-11 tf-dms td-bold" onclick="signUp()">Sign up</button>
+            <p id="ast-er" class="tc-red"></p>
+            <br><p class="tc-kgb2 tf-dms td-unbold" style="font-size: 14px;">Already have an account? <a href="?pop=login">Log in</a>.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- JSI -->
+    <script src="/assets/js/header.js"></script>
+</body>
+
+</html>

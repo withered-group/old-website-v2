@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Plans | Withered Hosting</title>
+        <meta name="description"
+            content="Reliable hosting for your product - Withered (withered.app) helps you host your project on a reliable auto-update platform.">
+        <link rel="icon" type="image/png" sizes="750x750" href="/assets/i/icon-nbg.png">
+    
+        <!-- Fonts -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&amp;display=swap">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="/assets/css/text.css">
+        <link rel="stylesheet" href="/assets/css/header.css">
+        <link rel="stylesheet" href="/assets/css/div.css">
+        <link rel="stylesheet" href="/assets/css/plans.css">
+        <link rel="stylesheet" href="/assets/css/misc.css">
+        <link href="http://fonts.cdnfonts.com/css/panton" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/ubuntu" rel="stylesheet">
+    
+        <!-- Header & Footer -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+            </script>
+    
+        <!-- Discord -->
+        <meta content="Withered | All-around powerful hosting" property="og:title">
+        <meta content="Reliable hosting for your product" property="og:description">
+        <meta content="https://withered.app" property="og:url">
+        <meta content="https://withered.app/assets/i/icon.png" property="og:image">
+        <meta content="#3f6aaa" data-react-helmet="true" name="theme-color">
+    </head>
+    <body class="tc-white" onload="bpol()">
+        <div id="wpcnt">
+            <!-- Header -->
+            <div id="asos"></div>
+
+            <div class="d-main" style="margin-top: -100px;">
+                <div class="d-s1 bgc-degray rc-15 tf-dms ts-9 td-bold2 td-cnt" style="padding: 0px; padding-bottom: 15px;">
+                    <p class="ts-3 tc-kgb" style="padding: 0px; padding-top: 25px;">Plans</p>
+                    <h2>Choose your platform</h2>
+                    <div style="display:grid;place-content:center;place-items:center;"><div style="display: flex; align-items: center; text-align: center; font-size: 18px;">
+                        Monthly
+                        <label class="switch" style="margin: 0 10px 0 10px;">
+                            <input type="checkbox" id="bptoggle" onclick="toggleBP()">
+                            <span class="slider"></span>
+                        </label>
+                        Annually
+                    </div>
+                    <span class="ts-13 tc-kgb2" style="margin-top: 7px;">1yr for the price of 10mo with annual subscriptions</span>
+                    <div style="padding: 5px; margin-top: 25px; margin-bottom: 20px;">
+                        <a href="#" class="btn btn-two ts-10" style="margin-left: 10px; margin-right: 10px;" onclick="revealPlan('discord')">Discord</a>
+                        <a href="#" class="btn btn-two ts-10" style="margin-left: 10px; margin-right: 10px;" onclick="revealPlan('web')">Website</a>
+                    </div>
+    
+                    <div id="plan-discord" class="plan plan-discord" style="display: none;">
+                        <section id="plan-discord_copper" class="plan__ip">
+                            <div class="plan__header plan__header__copper">
+                                <h3 class="plan__title" style="margin: 2px;">Copper</h3>
+                                <h5 class="plan__summary td-bold3" style="margin: 2px;">For small bots</h2>
+                            </div>
+                            <div class="plan__description">
+                                <ul class="plan__list">
+                                    <li class="plan__feature">Ryzen 9 5950X</li>
+                                    <li class="plan__feature">100+ mbps Uplink</li>
+                                    <li class="plan__feature">Works with Discord.js</li>
+                                    <li class="plan__feature">Up to 6 packages</li>
+                                    <li class="plan__feature">99% uptime</li>
+                                    <li class="plan__feature">Free support</li>
+                                    <li class="plan__missing">Code help</li>
+                                </ul>
+                            </div>
+                            <div class="plan__actions">
+                                <p class="plan__cost" id="dpcc" style="margin-bottom: 0px;">&#163;0.50</p>
+                                <p class="plan__text" id="dptc" style="margin-top: 0px; margin-bottom: 9px;">per month</p>
+                                <button style="margin-bottom: 10px;" class="plan__button" onclick="checkout('discord', 'copper')">Subscribe<br></button>
+                                <p class="plan__text">No refunds or commitment</p>
+                            </div>
+                        </section>
+                        <section id="plan-discord_palladium" class="plan__ip">
+                            <div class="plan__header  plan__header__palladium">
+                                <h3 class="plan__title tc-black" style="margin: 2px;">Palladium</h3>
+                                <h5 class="plan__summary td-bold3 tc-black" style="margin: 2px;">For medium-sized bots</h2>
+                            </div>
+                            <div class="plan__description">
+                                <ul class="plan__list">
+                                    <li class="plan__feature tc-kgb2">Everything in <i>Copper</i></li>
+                                    <li class="plan__feature">Up to 24 packages</li>
+                                    <li class="plan__feature">Code help</li>
+                                    <li style="margin-bottom: 160px;"></li>
+                                </ul>
+                            </div>
+                            <div class="plan__actions">
+                                <p class="plan__cost" id="dpcp" style="margin-bottom: 0px;">&#163;1.00</p>
+                                <p class="plan__text" id="dptp" style="margin-top: 0px; margin-bottom: 9px;">per month</p>
+                                <button style="margin-bottom: 10px;" class="plan__button" onclick="checkout('discord', 'palladium')">Subscribe<br></button>
+                                <p class="plan__text">No refunds or commitment</p>
+                            </div>
+                        </section>
+                        <section id="plan-discord_iridium" class="plan__ip">
+                            <div class="plan__header  plan__header__iridium">
+                                <h3 class="plan__title tc-black" style="margin: 2px;">Iridium</h3>
+                                <h5 class="plan__summary td-bold3 tc-black" style="margin: 2px;">For large multi-functional bots</h2>
+                            </div>
+                            <div class="plan__description">
+                                <ul class="plan__list">
+                                    <li class="plan__feature tc-kgb2">Everything in <i>Palladium</i></li>
+                                    <li class="plan__feature">Up to 48 packages</li>
+                                    <li style="margin-bottom: 210px;"></li>
+                                </ul>
+                            </div>
+                            <div class="plan__actions">
+                                <p class="plan__cost" id="dpci" style="margin-bottom: 0px;">&#163;1.50</p>
+                                <p class="plan__text" id="dpti" style="margin-top: 0px; margin-bottom: 9px;">per month</p>
+                                <button style="margin-bottom: 10px;" class="plan__button" onclick="checkout('discord', 'iridium')">Subscribe<br></button>
+                                <p class="plan__text" style="margin-left: 10px; margin-right: 10px;">No refunds or commitment</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="plan-web" class="plan plan-web" style="display: none;">
+                        <section id="plan-web_copper" class="plan__ip">
+                            <div class="plan__header plan__header__copper">
+                                <h3 class="plan__title" style="margin: 2px;">Copper</h3>
+                                <h5 class="plan__summary td-bold3" style="margin: 2px;">For small websites</h2>
+                            </div>
+                            <div class="plan__description">
+                                <ul class="plan__list">
+                                    <li class="plan__feature">Ryzen 9 5950X</li>
+                                    <li class="plan__feature">100+ mbps Uplink</li>
+                                    <li class="plan__feature">Supports HTML/CSS/JS,<br> Node.js & more</li>
+                                    <li class="plan__feature">Up to 10 pages</li>
+                                    <li class="plan__feature">99% uptime</li>
+                                    <li class="plan__feature">Free support</li>
+                                    <li class="plan__missing">Code help</li>
+                                    <li class="plan__missing">Free code snippets</li>
+                                    <li class="plan__missing">Free page template*</li>
+                                </ul>
+                            </div>
+                            <div class="plan__actions">
+                                <p class="plan__cost" id="wpcc" style="margin-bottom: 0px;">&#163;0.50</p>
+                                <p class="plan__text" id="wptc" style="margin-top: 0px; margin-bottom: 9px;">per month</p>
+                                <button style="margin-bottom: 10px;" class="plan__button" onclick="checkout('web', 'copper')">Subscribe<br></button>
+                                <p class="plan__text">No refunds or commitment</p>
+                            </div>
+                        </section>
+                        <section id="plan-web_palladium" class="plan__ip">
+                            <div class="plan__header  plan__header__palladium">
+                                <h3 class="plan__title tc-black" style="margin: 2px;">Palladium</h3>
+                                <h5 class="plan__summary td-bold3 tc-black" style="margin: 2px;">For medium-sized websites</h2>
+                            </div>
+                            <div class="plan__description">
+                                <ul class="plan__list">
+                                    <li class="plan__feature tc-kgb2">Everything in <i>Copper</i></li>
+                                    <li class="plan__feature">Up to 2 websites</li>
+                                    <li class="plan__feature">Up to 30 pages/website</li>
+                                    <li class="plan__feature">Increased bandwidth</li>
+                                    <li class="plan__feature">Code help</li>
+                                    <li class="plan__missing">Free code snippets</li>
+                                    <li class="plan__missing">Free page template*</li>
+                                    <li style="margin-bottom: 100px;"></li>
+                                </ul>
+                            </div>
+                            <div class="plan__actions">
+                                <p class="plan__cost" id="wpcp" style="margin-bottom: 0px;">&#163;1.00</p>
+                                <p class="plan__text" id="wptp" style="margin-top: 0px; margin-bottom: 9px;">per month</p>
+                                <button style="margin-bottom: 10px;" class="plan__button" onclick="checkout('web', 'palladium')">Subscribe<br></button>
+                                <p class="plan__text">No refunds or commitment</p>
+                            </div>
+                        </section>
+                        <section id="plan-web_iridium" class="plan__ip">
+                            <div class="plan__header  plan__header__iridium">
+                                <h3 class="plan__title tc-black" style="margin: 2px;">Iridium</h3>
+                                <h5 class="plan__summary td-bold3 tc-black" style="margin: 2px;">For large websites</h2>
+                            </div>
+                            <div class="plan__description">
+                                <ul class="plan__list">
+                                    <li class="plan__feature tc-kgb2">Everything in <i>Palladium</i></li>
+                                    <li class="plan__feature">Up to 4 websites</li>
+                                    <li class="plan__feature">Up to 90 pages/website</li>
+                                    <li class="plan__feature">Free code snippets</li>
+                                    <li class="plan__feature">Free page template*</li>
+                                    <li style="margin-bottom: 200px;"></li>
+                                </ul>
+                            </div>
+                            <div class="plan__actions">
+                                <p class="plan__cost" id="wpci" style="margin-bottom: 0px;">&#163;1.50</p>
+                                <p class="plan__text" id="wpti" style="margin-top: 0px; margin-bottom: 9px;">per month</p>
+                                <button style="margin-bottom: 10px;" class="plan__button" onclick="checkout('web', 'iridium')">Subscribe<br></button>
+                                <p class="plan__text" style="margin-left: 10px; margin-right: 10px;">No refunds or commitment</p>
+                            </div>
+                        </section>
+                    </div>
+                    <p style="margin-bottom: 50px;"></p>
+                    <p class="ts-13" style="margin: 4px;">*Code must be reviewed before deployed</p>
+                    <p class="ts-13" style="margin: 4px;">*Discord plans only support <i>discord.js</i></p>
+                    <p class="ts-13" style="margin: 4px;">*'Free page template' means you can get one free page designed by <a href="https://foxl.bss.design">foxl</a></p>
+                    <p class="ts-13" style="margin: 4px;">*Hosting not recommended for sites with over 10k unique visits per month. DDoS protection not included.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer"></div>
+
+        <script src="/assets/js/plans.js"></script>
+        <script src="/assets/js/header.js"></script>
+</html>

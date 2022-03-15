@@ -1,0 +1,112 @@
+/* Main div */
+.d-main {
+    margin: 25px;
+    box-shadow: rgba(0,0,0,0.5) 0px 5px 7px;
+}
+.d-m2-bg {
+    background-image: url("/assets/i/code2-d50.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.d-m2-hub-bg {
+    background-image: url("https://wthrd.co/d/of/assets/terflo-endscreenshot-1920x1080.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.d-m3-bg {
+    background-color: var(--t-degray);
+}
+.d-s1 {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.d-s1-bg {
+    background-color: var(--t-degray);
+    background-image: linear-gradient(
+        to bottom, transparent, var(--t-degray)
+    ), url("/assets/i/code-d50.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.d-s1-hub-bg {
+    background-color: var(--t-degray);
+    background-image: linear-gradient(
+        to bottom, transparent, var(--t-degray)
+    ), url("https://wthrd.co/d/of/assets/terflo-endscreenshot-1920x1080.png");
+    /* https://wthrd.co/d/of/assets/lbts-banner-1920x1080-darkened.jpg */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.d-s1-host-bg {
+    background-color: var(--t-degray);
+    background-image: linear-gradient(
+        to bottom, transparent, var(--t-degray)
+    ), url("/assets/i/servers.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.d-s2-bg {
+    background-color: rgba(8, 11, 14, 0.7);
+}
+
+/* Auth */
+#popDetails, #popLogin, #popSignUp {
+    display: none;
+    background-color: var(--t-degray);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 15px;
+    border-radius: 15px;
+}
+@media only screen and (min-width: 1700px) { #popDetails, #popLogin, #popSignUp {
+    width: 270%;
+}}
+@media only screen and (min-width: 1300px) and (max-width: 1700px) { #popDetails, #popLogin, #popSignUp {
+    width: 230%;
+}}
+@media only screen and (min-width: 975px) and (max-width: 1300px) { #popDetails, #popLogin, #popSignUp {
+    width: 180%;
+}}
+@media only screen and (min-width: 800px) and (max-width: 975px) { #popDetails, #popLogin, #popSignUp {
+    width: 140%;
+}}
+@media only screen and (max-width: 800px) { #popDetails, #popLogin, #popSignUp {
+    width: 100%;
+    border-radius: 0px;
+}#bgtb {
+    display: none;
+}}
+#dtlsHosting {
+    display: none;
+}
+
+.whp-sideimg {
+    padding: 20px;
+}
+
+
+.whp-body {
+    display: grid;
+}
+
+.whp-mimgc1 {
+    display: grid;
+    place-items: center;
+    padding-top: 0px;
+    display: grid;
+    height: 700px;
+    background-color: var(--t-xdgray);
+    background-image: linear-gradient(
+        to bottom, transparent, var(--t-xdgray)
+    ), url('/assets/i/servers-d50.jpg');
+    /* '/assets/i/mcnether-wblur.jpg' */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

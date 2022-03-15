@@ -1,0 +1,297 @@
+@import url('http://fonts.cdnfonts.com/css/panton');
+
+/* Colors */
+:root {
+    --t-xdgray: rgb(9, 16, 24);
+    --t-degray: rgb(21, 27, 34);
+    --t-ndegray: rgb(29, 37, 46);
+    --t-dgray: rgb(41, 53, 66);
+    --t-ndgray: rgb(51, 67, 83);
+    --t-gray: rgb(65, 86, 107);
+    --t-fdgray: rgb(7, 10, 12);
+}
+body {
+    background: var(--t-xdgray);
+}
+.bgc-white {
+    background-color: white;
+}
+.bgc-black {
+    background-color: black;
+}
+.bgc-xdgray {
+    background-color: var(--t-xdgray);
+}
+.bgc-degray {
+    background-color: var(--t-degray);
+}
+.bgc-ndegray {
+    background-color: var(--t-ndegray);
+}
+.bgc-dgray {
+    background-color: var(--t-dgray);
+}
+.bgc-ndgray {
+    background-color: var(--t-ndgray);
+}
+.bgc-gray {
+    background-color: var(--t-gray);
+}
+
+/* Rounded corners */
+.rc-10 {
+    border-radius: 10px;
+}
+.rc-12 {
+    border-radius: 12px;
+}
+.rc-14 {
+    border-radius: 14px;
+}
+.rc-15 {
+    border-radius: 15px;
+}
+.rc-25 {
+    border-radius: 25px;
+}
+.rc-35 {
+    border-radius: 35px;
+}
+.rc-50 {
+    border-radius: 50px;
+}
+.rc-100 {
+    border-radius: 100px;
+}
+
+/* Button */
+
+/* Buttons */
+button {
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 7px;
+    border-width: 2px;
+    border-style: solid;
+    transition: 0.3s;
+    font-family: 'Panton', sans-serif;
+}
+button.btn-one {
+    color: rgb(200, 200, 200);
+    background: rgba(0,0,0,0.3);
+    border-color: rgb(31, 82, 133);
+    border-width: 2px;
+}
+button.btn-two {
+    color: rgb(200, 200, 200);
+    background: rgba(0,0,0,0.3);
+    border-color: rgb(211, 142, 39);
+}
+button.btn-one:hover {
+    color: #fff;
+    background-color: rgb(31, 82, 133);
+    border-color: rgb(31, 82, 133);
+}
+button.btn-two:hover {
+    color: #fff;
+    background-color: rgb(211, 142, 39);
+    border-color: rgb(211, 142, 39);
+}
+a.btn {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 7px;
+    border-width: 2px;
+    border-style: solid;
+    transition: 0.3s;
+    font-family: 'Panton', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+a.btn-one {
+    color: rgb(200, 200, 200);
+    background: rgba(0,0,0,0.3);
+    border-color: rgb(31, 82, 133);
+}
+a.btn-two {
+    color: rgb(200, 200, 200);
+    background: rgba(0,0,0,0.3);
+    border-color: rgb(211, 142, 39);
+}
+a.btn-one:hover {
+    color: #fff;
+    background-color: rgb(31, 82, 133);
+    border-color: rgb(31, 82, 133);
+}
+a.btn-two:hover {
+    color: #fff;
+    background-color: rgb(211, 142, 39);
+    border-color: rgb(211, 142, 39);
+}
+
+/* Margin & Padding */
+.mpn, .mp-0 {
+    margin: 0;
+    padding: 0;
+}
+.mp-2 {
+    margin: 2px;
+    padding: 2px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+
+/* Code */
+code {
+    background-color:rgb(11, 14, 17);
+    padding: 4px;
+    border-radius: 8px;
+}
+
+/* Links */
+a {
+    color: rgb(118, 182, 255);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(180, 215, 255);
+    text-decoration: none;
+}
+
+/* Auth */
+.wtextfield {
+    color: white;
+    padding-bottom: 2px;
+    border-width: 0 0 3px;
+    border-color: var(--t-dgray);
+    background-color: transparent;
+    border-radius: 10px;
+    width: 300px;
+    height: 45px;
+    font-size: 22px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    padding: 7px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--t-ndgray) inset !important;
+}
+
+/* Tooltips */
+/* container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    font-size: 18px;
+    font-family: 'Quicksand';
+
+    width: 140px;
+    bottom: 105%;
+    left: 50%;
+    margin-left: -70px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+  
+/* Show  */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Toggle Switch */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider {
+    border-radius: 34px;
+}
+.slider:before {
+    border-radius: 50%;
+}
+
+/* Header Link */
+.hl {
+    color: white;
+    transition: 0.3s;
+}
+.hl:hover {
+    color: skyblue;
+}

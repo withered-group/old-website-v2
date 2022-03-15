@@ -1,0 +1,107 @@
+.plan {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.plan__ip {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    margin: 15px 5px;
+    padding: 0;
+    background: rgb(41, 53, 66);
+}
+
+.plan__header {
+    padding: 15px;
+    background: #009578;
+    color: #fff;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 2px 3px 7px rgba(0,0,0,0.2);
+}
+.plan__header.plan__header__copper {
+    background: linear-gradient(to bottom right, #a56324, #65a1c4);
+}
+.plan__header.plan__header__palladium {
+    background: linear-gradient(to bottom right, #eaffff, #adc8d4);
+}
+.plan__header.plan__header__iridium {
+    background: linear-gradient(to bottom right, #daedf1, #f1f1d8);
+}
+.plan__title, .plan__summary {
+    margin: 0;
+    text-align: center;
+}
+
+.plan__description {
+    text-align: left;
+    margin: 0;
+    padding: 15px;
+}
+.plan__list {
+    margin: 0;
+    padding: 0;
+}
+.plan__feature, .plan__missing, .plan__fnote {
+    list-style: none;
+    margin: 0;
+    padding-left: 30px;
+    position: relative;
+}
+.plan__feature, .plan__missing, .plan__fnote:not(:last-child) {
+    margin-bottom: 0.35em;
+}
+.plan__feature::before {
+    content: url("/assets/i/tick-s.png");
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.plan__missing::before {
+    content: url("/assets/i/cross-s.png");
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.plan__actions {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 12px 12px;
+}
+.plan__button {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    background-color:#009578;
+    padding: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 100px;
+    border-width: 0px;
+    transition: 0.3s;
+}
+.plan__button:hover {
+    background: #1de7bf;
+    color: black;
+}
+.plan__cost {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(202, 167, 241);
+}
+.plan__text {
+    font-size: 0.7em;
+    font-weight: 400;
+    color: rgb(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 15px 3px;
+}
+.plan__ctext {
+    color: rgb(202, 167, 241);
+}

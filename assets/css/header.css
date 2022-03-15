@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+  
+.topc {
+    background-color: #f5f5f5;
+    display: inline-block;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+.topc-2 {
+    text-align: left;
+    overflow: hidden;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+.topc-3 {
+    margin-top: -23px;
+    text-align: right;
+    /*overflow: hidden;*/
+}
+.topc-c1 {
+    display: inline-block;
+    margin: 3px;
+    overflow: hidden;
+}
+a.topc-c2 {
+    text-decoration: none;
+    margin-right: 25px;
+    overflow: hidden;
+}
+  
+.header {
+    padding: 10px 16px;
+    background: var(--t-ndegray);
+    color: white;
+}
+  
+.content {
+    padding: 16px;
+}
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 102px;
+}

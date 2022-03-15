@@ -1,0 +1,23 @@
+@media only screen and (min-width: 1300px) {
+    .projects-banner-lbts {
+        background-image: url("https://wthrd.co/d/of/assets/lbts-banner-1900x500-wfade-wlogo.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        height: 500px;
+    }
+    .projects-banner-terflo {
+        background-image: url("https://wthrd.co/d/of/assets/terflo-banner-1900x604-wfade-wlogo.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        height: 604px;
+    }
+}
+
+
+@media only screen and (min-width: 1300px) {
+    .projects-title {
+        display: none;
+    }
+}
