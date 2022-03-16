@@ -1,6 +1,9 @@
 <html>
-    <head><link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/misc.css"></head>
+    <head>
+        <link rel="stylesheet" href="/assets/css/text.css">
+        <link rel="stylesheet" href="/assets/css/header.css">
+        <link rel="stylesheet" href="/assets/css/misc.css">
+    </head>
     <body>
         <!--<div class="topc">
             <div class="topc-2">
@@ -16,11 +19,18 @@
         
         <!-- Header -->
         <div class="header">
-            <div class="topc-2 td-vcnt ts-11 tf-dms td-bold3 td-cnt" style="display:flex;align-items:center;">
+            <div class=" td-vcnt ts-11 tf-dms td-bold3 td-cnt" style="display:flex;align-items:center;">
                 <a href="/" class="hl" style="margin-right: 25px; padding-top: 6px;"><img style="height: 40px;" src="/assets/i/icon.png"></a>
                 <a href="/dash" class="hl" style="margin-right: 15px;" class="tc-kgb">Dashboard</a>
                 <a href="/hub" class="hl" style="margin-right: 15px;" class="tc-kgb">Withered Hub</a>
-                <a href="/hosting/" class="hl" style="margin-right: 15px;" class="tc-kgb">Hosting</a>
+                <div class="dropdown">
+                    <a href="/hosting/" class="hl" style="margin-right: 15px;" class="tc-kgb">Hosting</a>
+                    <div class="dropdown-content" style="text-align: left;">
+                        <a href="/hosting" class="tc-white dgpsc">Information</a>
+                        <a href="/hosting/plans" class="tc-white dgpsc">Plans</a>
+                    </div>
+                </div>
+                <a href="/jobs" class="hl" style="margin-right: 15px;" class="tc-kgb">Jobs</a>
             </div>
         </div>
     </body>

@@ -46,6 +46,9 @@
 .tf-os {
     font-family: 'Open Sans';
 }
+.tf-df {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 
 /* Text sizes */
 .ts-1 {
