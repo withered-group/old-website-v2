@@ -38,6 +38,10 @@ a.topc-c2 {
     padding: 10px 16px;
     background: var(--t-ndegray);
     color: white;
+    z-index: 2;
+}
+#asos {
+    z-index: 2;
 }
   
 .content {
