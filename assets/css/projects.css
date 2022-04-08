@@ -13,6 +13,13 @@
         background-size: cover;
         height: 604px;
     }
+    .projects-banner-lusass {
+        background-image: url("https://wthrd.co/d/of/assets/lusass-banner-1900x500-wfade-wlogo.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        height: 500px;
+    }
 }
 
 

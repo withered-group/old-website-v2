@@ -8,6 +8,8 @@ function loadProjectsPage() {
             loadProjectInPage('terflo');
         } else if (projectParam == 'lbts') {
             loadProjectInPage('lbts');
+        } else if (projectParam == 'lusass' || projectParam == 'lushassault') {
+            loadProjectInPage('lusass');
         }
     }
 }
@@ -16,5 +18,7 @@ function loadProjectInPage(pr) {
         window.location.href = "https://withered.app/hub/projects/terflo/";
     } else if (pr == 'lbts') {
         window.location.href = "https://withered.app/hub/projects/lbts/";
+    } else if (pr == 'lusass') {
+        window.location.href = "https://withered.app/hub/projects/lushassault/";
     }
 }
