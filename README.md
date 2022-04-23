@@ -1,5 +1,7 @@
-<img src="https://withered.app/assets/i/logowtext.png" alt="Withered">
-<h1>Withered website code</h1>
-mmmmmmmmmmmmmmmmm, i sure do love when ppl get 2 see da withered website code tho
+# Warning! Archived project
+This project is archived and nolonger updated
 
-btw its mit license, go read it: <a href="https://mitlicense.org">mitlicense.org</a>
+# Withered v2 website
+This is the old v2 Withered website. It has since been replaced by the Withered v3 website.
+Due to security reasons, we are unable to publish the source code of the v3 website.
+Read more about the new site: [withered.io/news/0](https://withered.io/news/0)
